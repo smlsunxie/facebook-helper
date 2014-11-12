@@ -1,0 +1,45 @@
+{
+  "name": "facebook-helper",
+  "version": "1.0.0",
+  "description": "Awesome module",
+  "keywords": [
+    "keyword1",
+    "keyword2"
+  ],
+  "homepage": "https://github.com/smlsunxie/facebook-helper",
+  "bugs": "https://github.com/smlsunxie/facebook-helper/issues",
+  "author": {
+    "name": "Smlsun Xie",
+    "email": "smlsun@gmail.com",
+    "url": "https://github.com/smlsunxie"
+  },
+  "main": "./lib/facebook-helper.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smlsunxie/facebook-helper.git"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "fb": "~0.7.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "coffee-errors": "^0.8.6",
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.6",
+    "gulp-coffee": "^2.1.1",
+    "gulp-istanbul": "^0.3.1",
+    "gulp-mocha": "^1.1.1",
+    "gulp-util": "^3.0.0",
+    "mocha": "^2.0.0",
+    "sinon": "^1.9.1",
+    "sinon-chai": "^2.5.0"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "license": "MIT"
+}
