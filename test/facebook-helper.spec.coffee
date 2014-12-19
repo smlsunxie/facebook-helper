@@ -13,9 +13,11 @@ describe 'facebook-helper', ->
 
   it "get friends list", (done) ->
     userId = "100000233810027"
-    token = "CAACEdEose0cBAH3ovpJmJTD8RJnVvwMVN1L1WNtONYZB6jKLZAEXKUWS9DldoOa6zxuzWATFa3a0McAFzfKjRWXiI9ZBES9Fi4I4V5Ul8ycjb2QJyABZBh5Dtd3IwDbd4yUnMFJgjG5965M2hdHDZC7W8mTy665JLJdZCTyf9lFlXVHe4YUYRn5MASEZC2FWoeZAe9okG7bdgiDEb2ePd7d5N6Pgs8xwhF0ZD"
+    token = "CAACEdEose0cBADzLdVf5VZAapEDwp5X1Iq75gjZCl07DgauZC6rqp3juLr35p0yfBvwGiQusypCvjnWHczUXbfX81YbdPupjmTHM8ZB1vJZBDGI19uMnIjtZCZB5zrHmr0NNaAfqZAjtCrqw8qtafr8Ung01ae8w88I4Afx5nG4RiyBMqvil0lVrWTbUZAlTFMj5XX1Hia3ORlSpatZBXZCXOd881fGzc1ZCVd8ZD"
 
     facebookHelper.getFriends userId, token, (error, friends) ->
+      console.log "friends", friends
+      (friends isnt undefined).should.be.true
       friends.should.be.Array
       friends[0].should.have.keys "name", "id"
 
