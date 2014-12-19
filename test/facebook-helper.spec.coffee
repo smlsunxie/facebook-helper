@@ -20,5 +20,4 @@ describe 'facebook-helper', ->
       (friends isnt undefined).should.be.true
       friends.should.be.Array
       friends[0].should.have.keys "name", "id"
-
       done()
